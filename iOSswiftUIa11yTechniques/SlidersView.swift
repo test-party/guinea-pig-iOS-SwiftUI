@@ -56,6 +56,7 @@ struct SlidersView: View {
                     }) {
                         Image(systemName: "sun.min")
                             .accessibilityLabel("Decrease Brightness")
+                            .padding()
                     }
                     Slider(value: $brightnessGood, in: 0...100, step: 10)
                         .accessibilityLabel("Brightness")
@@ -67,6 +68,7 @@ struct SlidersView: View {
                     }) {
                         Image(systemName: "sun.max.fill")
                             .accessibilityLabel("Increase Brightness")
+                            .padding()
                     }
                 }
                 DisclosureGroup("Details") {
