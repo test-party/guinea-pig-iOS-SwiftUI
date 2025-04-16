@@ -71,7 +71,7 @@ struct SlidersView: View {
                 }
                 DisclosureGroup("Details") {
                     Text("The first good slider example uses `Text(\"Brightness\")` as the visible label text and `.accessibilityLabel(\"Brightness\")` as the VoiceOver accessibility label. Buttons are used as single tap alternatives to the adjusting the slider with a gesture.")
-                }.padding(.bottom).accessibilityHint("Good Example with label text, `.accessibilityLabel`, and single tap gesture alternatives")
+                }.padding(.bottom).accessibilityHint("Good Example with label text, `.accessibilityLabel`, and single tap gesture alternatives").accessibilityLabel("Details first good slider example")
                 Text("Good Example `Slider` internal label text with `Stepper` and `TextField`")
                     .font(.subheadline)
                     .fontWeight(.bold)
@@ -104,7 +104,7 @@ struct SlidersView: View {
                     }
                 DisclosureGroup("Details") {
                     Text("The second good slider example uses visible label text as well as minimum and maximum value labels. A `TextField` and `Stepper` are included to allow users to see the exact value and have fine control when adjusting the value. The `Slider` uses internal `Text(\"Speed\")` as the invisible accessibility label. The `TextField` and `Stepper` use `.accessibilityLabel(\"Speed\")` as their VoiceOver labels.")
-                }.padding(.bottom).accessibilityHint("Good Example `Slider` internal label text with `Stepper` and `TextField`")
+                }.padding(.bottom).accessibilityHint("Good Example `Slider` internal label text with `Stepper` and `TextField`").accessibilityLabel("Details second good slider example")
                 Text("Bad Examples")
                     .font(.subheadline)
                     .fontWeight(.bold)
@@ -124,7 +124,7 @@ struct SlidersView: View {
                     .accessibilityIdentifier("sliderBad1")
                 DisclosureGroup("Details") {
                     Text("The first bad slider example uses no visible label text and no VoiceOver accessibility label. There are no single tap alternatives to adjusting the slider with a gesture.")
-                }.padding(.bottom).accessibilityHint("Bad Example no label text or `.accessibilityLabel` and no single tap gesture alternatives")
+                }.padding(.bottom).accessibilityHint("Bad Example no label text or `.accessibilityLabel` and no single tap gesture alternatives").accessibilityLabel("Details first bad slider example")
                 Text("Bad Example no label, no `.accessibilityLabel`, no `TextField`, no `Stepper`")
                     .font(.subheadline)
                     .fontWeight(.bold)
@@ -140,7 +140,7 @@ struct SlidersView: View {
                     .accessibilityIdentifier("sliderBad2")
                 DisclosureGroup("Details") {
                     Text("The second bad slider example uses no label text and no accessibility label for VoiceOver. Users can see the slider value but their is no `TextField` or `Stepper` included to allow fine control.")
-                }.accessibilityHint("Bad Example no label, no `.accessibilityLabel`, no `TextField`, no `Stepper`")
+                }.accessibilityHint("Bad Example no label, no `.accessibilityLabel`, no `TextField`, no `Stepper`").accessibilityLabel("Details second bad slider example")
             }
             .padding()
             .navigationTitle("Sliders")
