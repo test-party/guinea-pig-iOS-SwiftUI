@@ -98,7 +98,7 @@ struct SlidersView: View {
                     Stepper("", value: $speedGood).accessibilityLabel("Speed")
                 }
                 Slider(value: $speedGood, in: 0...100, step: 1) {
-                        Text("Speed")
+                        Text("Speed Slider")
                     } minimumValueLabel: {
                         Text("0")
                     } maximumValueLabel: {
